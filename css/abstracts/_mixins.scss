@@ -5,8 +5,7 @@
 
 @mixin flex-middle{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 @mixin flex-center-middle{
@@ -14,6 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
 }
 
 @mixin transition{

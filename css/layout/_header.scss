@@ -1,0 +1,105 @@
+// HEADER BLACK BACKGROUND
+header:nth-of-type(1) {
+    background-color: black;
+    height: 46px;
+}
+
+.black-banner{
+    div {
+        @include flex-middle;
+    }
+    div:first-child{
+        i{
+            color: $red;
+        }
+    }
+    div:last-child{
+        i{
+            color: $gray;
+            padding-right: 15px;
+        }
+    }
+    span, p, a{
+        color: $gray;
+        font-size: 14px;
+    }
+    span{
+        text-transform: uppercase;
+        border-right: 1px solid $gray;
+    }
+    a{
+        text-decoration: none;
+    }
+    span, p{
+        padding: 0 20px;
+    }
+}
+
+// HEADER WHITE BACKGROUND
+
+
+.white-banner{
+    padding: 10px 0;
+    height: 110px;
+    a:nth-of-type(2) img{
+        width: 750px;
+    }
+    a {
+        @include flex-middle;
+    }
+}
+
+// HEADER RED BACKGROUND
+
+header div:nth-of-type(3) {
+    background-color: $red;
+}
+
+.red-banner{
+    height: 80px;
+    nav, div{
+        @include flex-middle;
+    }
+    nav {
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            border-right: 1px solid white;
+            padding: 0 20px;
+            &:first-child{
+                padding: 0 20px 0 0;
+            }
+            &:last-child{
+                padding: 0 0 0 20px;
+                border-right: none;
+            }
+    }
+    }
+    a {
+        color: white;
+    }
+    i {
+        padding: 0 15px;
+        @include transition;
+        transform: scaleX(1);
+    }
+}
+
+.header-social-m div{
+    height: 100%;
+    &:first-child{
+        border: 1px solid rgba(255, 255, 255, 0.601);
+        i:hover {
+            transform: scaleX(-1);
+        }
+    }
+    &:last-child{
+        border-right: 1px solid rgba(255, 255, 255, 0.601);
+        padding: 20px;
+    }
+}
+
+// RESPONSIVE
+
