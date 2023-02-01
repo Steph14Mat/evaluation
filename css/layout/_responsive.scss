@@ -1,0 +1,113 @@
+// RESPONSIVE MAX-WIDTH 1200PX
+@media screen and (max-width: 1200px) {
+    // GLOBAL
+    .container {
+        width: 960px;
+    }
+    // HEADER
+    .white-banner{
+        padding: 10px 0;
+        height: 80px;
+        a:nth-of-type(2) img{
+            max-width: 600px;
+        }
+    }
+}
+
+// RESPONSIVE MAX-WIDTH 992PX
+
+@media screen and (max-width: 992px) {
+    // GLOBAL
+    .container {
+        width: 720px;
+    }
+    // HEADER
+    .white-banner{
+        padding: 10px 0;
+        height: 80px;
+        a:nth-of-type(2) img{
+            max-width: 500px;
+        }
+    }
+    .black-banner span{
+        border-right: none;
+    }
+    .black-banner div div:nth-of-type(2){
+        display: none;
+    }
+    .red-banner .header-social-m{
+        display: none;
+    }
+    // FOOTER
+    .footer-col{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        div:nth-of-type(3){
+            justify-content: flex-start;
+        }
+    }
+}
+
+// RESPONSIVE MAX-WIDTH 768PX
+
+@media screen and (max-width: 768px) {
+    // GLOBAL
+    .container {
+        width: 540px;
+    }
+    // HEADER
+    .white-banner a:nth-of-type(1){
+        display: none;
+        a:nth-of-type(2) img{
+            width: 100%;
+         }
+    }
+    .red-banner nav{
+        display: none;
+    }
+    .logo-red-banner{
+        display: block;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    // FOOTER
+    .footer-col{
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        div:nth-of-type(3){
+            justify-content: flex-start;
+        }
+        &__popular-rows{
+            width: 70%;
+        }
+    }
+    footer .container{
+        margin: 0 100px;
+    }
+}
+
+// RESPONSIVE MAX-WIDTH 576PX
+
+@media screen and (max-width: 576px) {
+    // GLOBAL
+    .container {
+        max-width: 440px;
+    }
+    // HEADER
+    .header-black {
+        display: none;
+    }
+    // FOOTER
+    .footer-col{
+        width: 100%;
+        align-items: start;
+        &__popular-rows{
+            width: 100%;
+        }
+    }
+    footer .container{
+        margin: 15px;
+        padding: 70px 0 !important;
+    }
+}

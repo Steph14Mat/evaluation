@@ -1,57 +1,43 @@
+// MAIN CONTAINER
 .container {
     width: 1200px;
-    margin: auto;
-    
+    margin: 0 auto;
 }
 
+// BACKGROUND COLORS
+.black-background {
+    background-color: black;
+}
+
+.red-background{
+    background-color: $red;
+}
+
+// GENERAL FLEX
 .f-s-between {
     @include space-between;
 }
 
 
-
-
-
-// RESPONSIVE MAX-WIDTH 1200PX
-
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 960px;
-    }
-}
-
-// RESPONSIVE MAX-WIDTH 992PX
-
-@media screen and (max-width: 992px) {
-    .container {
-        width: 720px;
-    }
-    .black-banner {
-        p {
-            display: none;
+// LEFT IMAGE AND RIGHT CONTENT WITH AUTOR AND TIME
+.left-image-right-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+    .title-writer-time{
+        grid-column: 2 / 5;
+        h4{
+            margin: 6px 0;
+            @include transition;
         }
-    }
-    .white-banner{
-        padding: 10px 0;
-        height: 80px;
-        a:nth-of-type(2) img{
-            width: 500px;
+        h4:hover {
+            color: $red;
+        }
+        span:nth-of-type(1){
+            border-right: 1px solid $gray;
+            padding-right: 5px;
         }
     }
 }
 
-// RESPONSIVE MAX-WIDTH 768PX
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 540px;
-    }
-}
-
-// RESPONSIVE MAX-WIDTH 576PX
-
-@media screen and (max-width: 576px) {
-    .container {
-        width: 525px;
-    }
-}

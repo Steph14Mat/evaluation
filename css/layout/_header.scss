@@ -1,14 +1,10 @@
-// HEADER BLACK BACKGROUND
-header:nth-of-type(1) {
-    background-color: black;
-    height: 46px;
-}
-
+// HEADER BLACK BACKGROUND BANNER
 .black-banner{
-    div {
+    height: 46px;
+    div{
         @include flex-middle;
     }
-    div:first-child{
+    div div:first-child{
         i{
             color: $red;
         }
@@ -35,27 +31,21 @@ header:nth-of-type(1) {
     }
 }
 
-// HEADER WHITE BACKGROUND
-
-
+// HEADER WHITE BACKGROUND BANNER
 .white-banner{
-    padding: 10px 0;
     height: 110px;
+    padding: 10px 0;
     a:nth-of-type(2) img{
-        width: 750px;
+       max-width: 750px;
     }
     a {
         @include flex-middle;
     }
 }
 
-// HEADER RED BACKGROUND
-
-header div:nth-of-type(3) {
-    background-color: $red;
-}
-
+// HEADER RED BACKGROUND BANNER
 .red-banner{
+    align-items: center;
     height: 80px;
     nav, div{
         @include flex-middle;
@@ -87,6 +77,10 @@ header div:nth-of-type(3) {
     }
 }
 
+.header-social-m{
+    height: 100%;
+}
+
 .header-social-m div{
     height: 100%;
     &:first-child{
@@ -101,5 +95,19 @@ header div:nth-of-type(3) {
     }
 }
 
-// RESPONSIVE
+// BURGER MENU + LOGO
+.logo-red-banner{
+    @include flex-middle;
+    display: none;
+}
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30px;
+    div{
+    width: 30px;
+    border: 2px solid white;
+    }
+}
