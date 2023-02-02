@@ -9,8 +9,20 @@
     background-color: black;
 }
 
+.l-gray-background {
+    background-color: $gray-light;
+}
+
 .red-background{
     background-color: $red;
+}
+
+.blue-background{
+    background-color: $blue;
+}
+
+.green-background{
+    background-color: $green;
 }
 
 // GENERAL FLEX
@@ -25,19 +37,35 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     align-items: center;
-    .title-writer-time{
-        grid-column: 2 / 5;
-        h4{
-            margin: 6px 0;
-            @include transition;
-        }
-        h4:hover {
-            color: $red;
-        }
-        span:nth-of-type(1){
-            border-right: 1px solid $gray;
-            padding-right: 5px;
-        }
+}
+
+// TITLE WRITE AND TIME IN SPAN
+.title-writer-time{
+    grid-column: 2 / 5;
+    h1, h2, h3, h4{
+        @include transition;
+    }
+    h4{
+        margin: 6px 0;
+    }
+    h1:hover{
+        color: $red;
+    }
+    h2:hover{
+        color: $red;
+    }
+    h3:hover{
+        color: $red;
+    }
+    h4:hover{
+        color: $red;
+    }
+    span:nth-of-type(1){
+        border-right: 1px solid $gray;
+        padding-right: 5px;
     }
 }
 
+hr{
+    border-top: 1px solid $gray-light;
+}

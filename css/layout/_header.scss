@@ -31,8 +31,8 @@
     }
 }
 
-// HEADER WHITE BACKGROUND BANNER
-.white-banner{
+// HEADER LIGHT GRAY BACKGROUND BANNER
+.l-gray-banner{
     height: 110px;
     padding: 10px 0;
     a:nth-of-type(2) img{
@@ -84,14 +84,14 @@
 .header-social-m div{
     height: 100%;
     &:first-child{
-        border: 1px solid rgba(255, 255, 255, 0.601);
+        border-left: 1px solid rgba(255, 255, 255, 0.601);
+        border-right: 1px solid rgba(255, 255, 255, 0.601);
         i:hover {
             transform: scaleX(-1);
         }
     }
     &:last-child{
         border-right: 1px solid rgba(255, 255, 255, 0.601);
-        padding: 20px;
     }
 }
 
