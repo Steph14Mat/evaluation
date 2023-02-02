@@ -25,6 +25,10 @@
     background-color: $green;
 }
 
+.purple-background{
+    background-color: $purple;
+}
+
 // GENERAL FLEX
 .f-s-between {
     @include space-between;
