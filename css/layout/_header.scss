@@ -36,7 +36,7 @@
     height: 110px;
     padding: 10px 0;
     a:nth-of-type(2) img{
-       max-width: 750px;
+       max-width: 100%;
     }
     a {
         @include flex-middle;
